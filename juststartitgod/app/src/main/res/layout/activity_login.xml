@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="280dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="ENTER YOU EMAIL"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="244dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="ENTER PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail" />
+
+    <Button
+        android:id="@+id/bulogin"
+        android:layout_width="157dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="100dp"
+        android:onClick="buloginevent"
+        android:text="LOGIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

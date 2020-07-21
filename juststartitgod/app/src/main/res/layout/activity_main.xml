@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10pt">
+
+        <EditText
+            android:id="@+id/etmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3pt"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="other player email"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/burequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3pt"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="burequestevent"
+            android:text="REQUEST" />
+
+        <Button
+            android:id="@+id/buaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3pt"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="buacceptevent"
+            android:text="ACCEPT" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bu1"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+
+            <Button
+                android:id="@+id/bu2"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+
+            <Button
+                android:id="@+id/bu3"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bu4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="butclick" />
+
+            <Button
+                android:id="@+id/bu5"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+
+            <Button
+                android:id="@+id/bu6"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bu7"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+
+            <Button
+                android:id="@+id/bu8"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+
+            <Button
+                android:id="@+id/bu9"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:onClick="butclick" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
